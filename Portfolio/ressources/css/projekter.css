@@ -1,0 +1,97 @@
+@import url("styles.css");
+@import url("queries.css");
+
+
+html {
+    background-color: #f1f1f1;
+    color: #494848;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial;
+  background: #f1f1f1;
+}
+
+.content {
+  margin: 5rem;
+}
+
+h1 {
+  color: #494848;
+}
+
+/* Header/Blog Title */
+.header {
+  text-align: center;
+}
+
+.header,
+.container {
+  padding: 30px;
+  background: white;
+}
+
+.container {
+  margin-top: 20px;
+}
+.row {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+.sticky2 {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+}
+
+.sticky2 + .content {
+  padding-top: 102px;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+
+  .content {
+    margin:2rem;
+  }
+}
